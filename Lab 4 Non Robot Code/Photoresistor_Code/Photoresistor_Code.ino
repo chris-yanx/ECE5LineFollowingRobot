@@ -12,22 +12,22 @@ void setup() {
   Serial.begin(9600); // For serial communication set up
 
   for (int i = 0; i < totalPhotoResistors; i++) 
-    pinMode(LDR_Pin[i],  );
+    pinMode(LDR_Pin[i],  INPUT);
 
 }
 
 void loop() {
   /**FIX ME: Which function should we call here to read photo resistors? **/ // Read photoresistors and map to 0-100 based on calibration
-
+  ReadPhotoResistors();
   /**FIX ME: Which function should we call here to print out our values? **/ // Print values to serial monitor
+  Print();
 }
 
 // ************************************************************************************************* //
 // function to read photo resistors
 void ReadPhotoResistors() {
-  // looping through analog pins A8 to A14 and storing their values into our LDR array
   for (int i = 0; i < totalPhotoResistors; i++) {
-    LDR[i] = ? /** FIX ME: which function to put here to read analog pins? **/
+    LDR[i] = (float)analogRead(LDR_Pin[i])/1023*100; /** FIX ME: which function to put here to read analog pins? **/
     delay(2);
   }
 }
