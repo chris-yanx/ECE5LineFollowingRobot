@@ -4,7 +4,7 @@ We designed our robot to face "wheels forward" allowing for more precise turning
 Riccardo customized the chassis of the robot to create a two-story structure that stacked the arduino on top of the potentiometer breadboard.
 ![robot diagram](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/5c0d2284-f235-4510-8cf7-ba3c5c3bb1c3)
 
-We wired the motor shield, potentiometers, motors, and photoresistors,testing all of them separately:
+We wired the motor shield, potentiometers, motors, and photoresistors, testing all of them separately:
 
 ![motorshield circuit](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/9ed9b58a-154c-408d-acc8-3b3a234f80fa)
 
