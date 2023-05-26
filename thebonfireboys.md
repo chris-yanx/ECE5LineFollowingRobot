@@ -9,6 +9,6 @@ We wired the motor shield, potentiometers, motors, and photoresistors,testing al
 
 ![potentiometer circuit](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/2984df93-b714-45a5-be48-d5c288a1ff3e)
 
-![motorshield circuit](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/a725dcc3-bc59-40ba-9ee4-359bb7220e16)
+![motorshield circuit](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/9ed9b58a-154c-408d-acc8-3b3a234f80fa)
 
-![photoresistor circuit](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/5f5e9865-157f-4d0d-831f-7f6c4d51ae18)
+![photoresistor circuit](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/c1771d89-0d66-476d-9f91-dabe4a2e1a76)
