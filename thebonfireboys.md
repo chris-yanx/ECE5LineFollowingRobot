@@ -1,5 +1,3 @@
-Sure! Here's the text formatted in markdown:
-
 ## The Bonfire Boys - Line Following Robot:
 Group Members:
 - Muhstahsin Zarif
