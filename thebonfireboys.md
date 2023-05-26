@@ -1,7 +1,16 @@
-## Line Following Robot:
+Sure! Here's the text formatted in markdown:
+
+## The Bonfire Boys - Line Following Robot:
+Group Members:
+- Muhstahsin Zarif
+- Riccardo Manca
+- Chris Xiao
+- Ian Cunningham
+
 We designed our robot to face "wheels forward" allowing for more precise turning.
 
-Riccardo customized the chassis of the robot to create a two-story structure that stacked the arduino on top of the potentiometer breadboard.
+Riccardo customized the chassis of the robot to create a two-story structure that stacked the Arduino on top of the potentiometer breadboard.
+
 ![robot diagram](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/5c0d2284-f235-4510-8cf7-ba3c5c3bb1c3)
 
 We wired the motor shield, potentiometers, motors, and photoresistors, testing all of them separately:
