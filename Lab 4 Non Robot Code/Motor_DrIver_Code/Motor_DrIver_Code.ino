@@ -58,8 +58,9 @@ void loop() {
 
   // Stop Motors
   /** FIX ME: stop motor 1 **/
-//  runMotorAtSpeed(LEFT, 0);
-//  runMotorAtSpeed(RIGHT, 0);
+  /*runMotorAtSpeed(LEFT, 0);
+  /** FIX ME: stop motor 2 **/
+  /*runMotorAtSpeed(RIGHT, 0);*/
   DriveMotors.stop();
   //DriveMotors.stop(RIGHT);
   delay(3000); // stop for 3 seconds
