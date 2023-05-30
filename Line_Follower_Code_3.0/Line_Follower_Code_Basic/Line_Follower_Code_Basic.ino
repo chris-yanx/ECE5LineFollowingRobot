@@ -52,12 +52,12 @@ const int P_pin = A2; // Pin connected to P term potentiometer
 const int I_pin = A1; // Pin connected to I term potentiometer
 const int D_pin = A0; // Pin connected to D term potentiometer
                                                                  
-int led_Pins[] = {41,43,45,47,49,51,53};  // LEDs to indicate what part of calibration you're on and to illuminate the photoresistors
+int led_Pins[] = {41};  // LEDs to indicate what part of calibration you're on and to illuminate the photoresistors
 
 // ************************************************************************************************* //
 // Change Robot Settings here
 
-#define PRINTALLDATA        0  // Prints ALL the data, Could be useful for debugging =)
+#define PRINTALLDATA        1  // Prints ALL the data, Could be useful for debugging =)
 #define NOMINALSPEED        30 // This is the base speed for both motors, can also be increased by using potentiometers
 
 // ************************************************************************************************* //
@@ -108,7 +108,7 @@ void setup() {
 
 // ************************************************************************************************* //
 // loop - runs/loops forever
-void loop() {
+void loop() { 
 
   ReadPotentiometers(); // Read potentiometers
 
@@ -354,4 +354,3 @@ void Print() {
   delay(100);                                    // just here to slow down the output for easier reading. Don't comment out or else it'll slow down the processor on the arduino
 
 } // end Print()
-

@@ -27,8 +27,9 @@ void loop() {
 // function to read photo resistors
 void ReadPhotoResistors() {
   for (int i = 0; i < totalPhotoResistors; i++) {
-    LDR[i] = (float)analogRead(LDR_Pin[i])/1023*100; /** FIX ME: which function to put here to read analog pins? **/
-    delay(2);
+
+    LDR[i] = (float)analogRead(LDR_Pin[i]);
+    delay(20);
   }
 }
 
