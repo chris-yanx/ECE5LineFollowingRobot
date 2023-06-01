@@ -26,10 +26,10 @@ void loop() { /* Loop - loops forever (until unpowered or reset) */
 
 void ReadPotentiometers() {
   // Call on user-defined function to read Potentiometer values
-  Sp = /* FIX ME, replace this comment with actual function name */ (S_pin, 0, 1023, 0, 100);
-  kP = /* FIX ME, replace this comment with actual function name */ (P_pin, 0, 1023, 0, 100);
-  kI = /* FIX ME, replace this comment with actual function name */ (I_pin, 0, 1023, 0, 100);
-  kD = /* FIX ME, replace this comment with actual function name */ (D_pin, 0, 1023, 0, 100); 
+  Sp = ReadPotentiometerHelper(S_pin, 0, 1023, 0, 100);
+  kP = ReadPotentiometerHelper(P_pin, 0, 1023, 0, 100);
+  kI =ReadPotentiometerHelper(I_pin, 0, 1023, 0, 100);
+  kD = ReadPotentiometerHelper(D_pin, 0, 1023, 0, 100); 
 
 }
 int ReadPotentiometerHelper(int pin, int min_resolution, int max_resolution, int min_potentiometer, int max_potentiometer) {
