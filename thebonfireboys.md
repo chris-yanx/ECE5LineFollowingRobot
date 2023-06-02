@@ -1,9 +1,8 @@
 ## The Bonfire Boys - Line Following Robot:
 
-<video controls>
-  <source src="line following robot_1.mp4" type="video/mp4">
-  <!-- Add additional source tags for different video formats if needed -->
-</video>
+
+
+https://github.com/chris-yanx/ECE5LineFollowingRobot/assets/109472436/8bc39d66-17bb-42d4-9cc4-518d234ac094
 
 
 
