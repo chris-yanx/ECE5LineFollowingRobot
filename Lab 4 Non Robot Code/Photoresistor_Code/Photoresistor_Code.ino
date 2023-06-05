@@ -8,16 +8,29 @@ int totalPhotoResistors = sizeof(LDR_Pin) / sizeof(LDR_Pin[0]);
 
 int LDR[99];
 
+//int led_Pins[] = {41};
+//int numLEDs = sizeof(led_Pins) / sizeof(led_Pins[0]);    
+//int led_val=0;
+
 void setup() {
   Serial.begin(9600); // For serial communication set up
-
+  
   for (int i = 0; i < totalPhotoResistors; i++) 
     pinMode(LDR_Pin[i],  INPUT);
+    
+//  for (int i = 0; i < numLEDs; i++)
+//    pinMode(led_Pins[i], OUTPUT);   
+
 
 }
 
 void loop() {
   /**FIX ME: Which function should we call here to read photo resistors? **/ // Read photoresistors and map to 0-100 based on calibration
+//  if (led_val == 0)
+//    led_val = 1;
+//  else if (led_val == 1)
+//    led_val = 0;
+//  setLeds(led_val);
   ReadPhotoResistors();
   /**FIX ME: Which function should we call here to print out our values? **/ // Print values to serial monitor
   Print();
@@ -25,6 +38,11 @@ void loop() {
 
 // ************************************************************************************************* //
 // function to read photo resistors
+//void setLeds(int x) {
+//  for (int i = 0; i < numLEDs; i++)
+//    digitalWrite(led_Pins[i], x);
+//}
+
 void ReadPhotoResistors() {
   for (int i = 0; i < totalPhotoResistors; i++) {
 

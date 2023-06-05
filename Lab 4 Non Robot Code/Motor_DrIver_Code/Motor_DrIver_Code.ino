@@ -15,7 +15,7 @@ L298NX2 DriveMotors(  2, 3, 4,      7, 5, 6); // Digital Pins on Arduino
 //                 ENA, IN1, IN2, ENB, IN3, IN4
 
 //Set Initial Speed of Motors
-int speed = 60;
+int speed = 100;
 
 // A function that commands a specified motor to move towards a given direction at a given speed
 void runMotorAtSpeed(side _side, int speed) {
@@ -44,24 +44,21 @@ void setup() {
 // loop - loops forever
 void loop() {
 
+  
   // Start Motors in forward direction
   runMotorAtSpeed(LEFT, speed);
   runMotorAtSpeed(RIGHT, speed);
-  delay(3000); // let run forward for 3 seconds
+  delay(3000);
 
   // Start Motors in backward direction
   /** FIX ME: set motor 1 at M1Sp in the BACKWARD direction (HINT: Very similar to forward direction) **/
   /** FIX ME: set motor 2 at M2Sp in the BACKWARD direction **/
   runMotorAtSpeed(LEFT, -speed);
   runMotorAtSpeed(RIGHT, -speed);
-  delay(3000); // let run backward for 3 seconds
+  delay(3000); // let run backward for 3 seconds*/
 
   // Stop Motors
-  /** FIX ME: stop motor 1 **/
-  /*runMotorAtSpeed(LEFT, 0);
-  /** FIX ME: stop motor 2 **/
-  /*runMotorAtSpeed(RIGHT, 0);*/
   DriveMotors.stop();
-  //DriveMotors.stop(RIGHT);
+  
   delay(3000); // stop for 3 seconds
 }

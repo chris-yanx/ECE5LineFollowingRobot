@@ -42,9 +42,9 @@
 L298NX2 DriveMotors(  2, 3, 4,      7, 5, 6);
 //                 ENA, IN1, IN2, ENB, IN3, IN4
 
-enum side {LEFT, RIGHT};
+enum side {LEFT,RIGHT};
 
-int LDR_Pin[] = {A8, A9, A10, A11, A12, A13, A14}; // SET PINS CONNECTED TO PHOTORESISTORS // FROM LEFT TO RIGHT OF THE ROBOT, ROBOT IS ORIENTED WHERE PHOTORESISOTRS FARTHEST FROM YOU AND WHEELS ARE CLOSEST TO YOU      
+int LDR_Pin[] = {A14, A13, A12, A11, A10, A9, A8}; // SET PINS CONNECTED TO PHOTORESISTORS // FROM LEFT TO RIGHT OF THE ROBOT, ROBOT IS ORIENTED WHERE PHOTORESISOTRS FARTHEST FROM YOU AND WHEELS ARE CLOSEST TO YOU      
 
 // Potentiometer Pins
 const int S_pin = A3; // Pin connected to Speed potentiometer
@@ -58,7 +58,7 @@ int led_Pins[] = {41};  // LEDs to indicate what part of calibration you're on a
 // Change Robot Settings here
 
 #define PRINTALLDATA        1  // Prints ALL the data, Could be useful for debugging =)
-#define NOMINALSPEED        30 // This is the base speed for both motors, can also be increased by using potentiometers
+#define NOMINALSPEED        -70 // This is the base speed for both motors, can also be increased by using potentiometers
 
 // ************************************************************************************************* //
 // Variable declarations
@@ -209,7 +209,7 @@ void setLeds(int x) {
 // function to read and map values from potentiometers
 void ReadPotentiometers() {
   // Call on user-defined function to read Potentiometer values
-  SpRead = ReadPotentiometerHelper(S_pin, 0, 1023, 0, 100); // We want to read a potentiometer for S_pin with resolution from 0 to 1023 and potentiometer range from 0 to 100.
+  SpRead = -0.2*ReadPotentiometerHelper(S_pin, 0, 1023, 0, 100); // We want to read a potentiometer for S_pin with resolution from 0 to 1023 and potentiometer range from 0 to 100.
   kPRead = ReadPotentiometerHelper(P_pin, 0, 1023, 0, 100); // We want to read a potentiometer for P_pin with resolution from 0 to 1023 and potentiometer range from 0 to 100.
   kIRead = ReadPotentiometerHelper(I_pin, 0, 1023, 0, 100); // We want to read a potentiometer for I_pin with resolution from 0 to 1023 and potentiometer range from 0 to 100.
   kDRead = ReadPotentiometerHelper(D_pin, 0, 1023, 0, 100); // We want to read a potentiometer for D_pin with resolution from 0 to 1023 and potentiometer range from 0 to 100.
@@ -305,7 +305,7 @@ void CalcError() {
 // ************************************************************************************************* //
 // PID Function
 void PID_Turn() {
-  kP = (float)kPRead * 1.;    // each of these scaling factors can change depending on how influential you want them to be
+  kP = (float)kPRead * 0.2;    // each of these scaling factors can change depending on how influential you want them to be
   kI = (float)kIRead * 0.001;
   kD = (float)kDRead * 0.01;
 
