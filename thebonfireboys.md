@@ -1,8 +1,8 @@
 ## The Bonfire Boys - Line Following Robot:
 
-https://youtube.com/shorts/Il4IDIKPqVI?feature=share
+# Video:
+[https://youtube.com/shorts/Il4IDIKPqVI?feature=share](https://youtube.com/shorts/Il4IDIKPqVI?feature=share)
 
-https://github.com/chris-yanx/ECE5LineFollowingRobot/assets/109472436/1225dc6e-4093-4218-be32-66ea0092f91a
 
 
 ![image](https://github.com/IanCunningham447/ECE5LineFollowingRobot/assets/109472436/f61bd49f-93d8-49f2-b6a6-93c918bd168d)
